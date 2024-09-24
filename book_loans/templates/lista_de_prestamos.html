@@ -9,10 +9,10 @@
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Libro</th>
-            <th scope="col">Usuario</th>
+            <th scope="col">Nombre Cliente</th>
+            <th scope="col">Apellido Cliente</th>
             <th scope="col">Fecha de Prestamo</th>
             <th scope="col">Fecha de Devolucion</th>
-            <th scope="col">Estado</th>
           </tr>
         </thead>
         <tbody>
@@ -20,22 +20,22 @@
           <tr>
             <th scope="row">{{prestamo.id}}</th>
             <td>{{prestamo.libro}}</td>
-            <td>{{prestamo.usuario}}</td>
+            <td>{{prestamo.nombre_usuario}}</td>
+            <td>{{prestamo.apellido_usuario}}</td>
             <td>{{prestamo.fecha_prestamo}}</td>
             <td>{{prestamo.fecha_devolucion}}</td>
-            <td>{{prestamo.estado}}</td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
     </div>
   </div>
+</div>
 
   <div class="align-content-center text-center">
     <a class="btn btn-secondary mb-4 mt-4" href="../">Volver a Inicio</a>
-    <a class="btn btn-primary mb-4 mt-4" href="{% url 'nuevo_cliente' %}"
-      >Registrar Cliente</a
+    <a class="btn btn-primary mb-4 mt-4" href="{% url 'nuevo_cliente' %}">Registrar Cliente</a
   </div>
-</div>
+ 
 
 {% endblock contenidoDinamico %}

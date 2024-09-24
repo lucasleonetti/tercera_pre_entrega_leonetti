@@ -96,6 +96,6 @@ class AutorForm(forms.Form):
     
     fecha_nacimiento = forms.DateField(widget=forms.DateInput(attrs={'placeholder': 'Ingrese fecha de nacimiento de autor', 'class': 'form-control mb-4', 'type': 'date' }), label='Fecha de nacimiento de autor')
     
-    fecha_defuncion = forms.DateField(widget=forms.DateInput(attrs={'placeholder': 'Ingrese fecha de defunción de autor', 'class': 'form-control mb-4', 'type': 'date' }), label='Fecha de defunción de autor')
+    fecha_defuncion = forms.DateField(widget=forms.DateInput(attrs={'placeholder': 'Ingrese fecha de defunción de autor', 'class': 'form-control mb-4', 'type': 'date' }), label='Fecha de defunción de autor', required=False)
     
     nacionalidad = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'placeholder': 'Ingrese nacionalidad de autor', 'class': 'form-control mb-4' }), label='Nacionalidad de autor')
