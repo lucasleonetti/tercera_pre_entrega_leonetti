@@ -6,25 +6,25 @@ Este proyecto es una aplicación web desarrollada en Django que permite la gesti
 
 ## Instrucciones para la ejecucion del proyecto
 
-1.Clonar el repositorio
+- Clonar el repositorio
 
 ```bash
 git clone https://github.com/lucasleonetti/tercera_pre_entrega_leonetti.git
 ```
 
-2.Instalar las dependencias
+- Instalar las dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4.Lanzar el servidor
+- Lanzar el servidor
 
 ```bash
 python manage.py runserver
 ```
 
-5.Acceder a la aplicación en el navegador
+- Acceder a la aplicación en el navegador
 
 ```bash
 http://localhost:8000/book_loans/
