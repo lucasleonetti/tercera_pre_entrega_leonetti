@@ -11182,12 +11182,13 @@ fieldset:disabled .btn {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/welcome_image.jpg") no-repeat center
-    center;
+  background: url("../assets/img/welcome_image.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  opacity: 0.8;
 }
+
 header.masthead:before {
   content: "";
   position: absolute;
@@ -11196,7 +11197,7 @@ header.masthead:before {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 header.masthead h1,
 header.masthead .h1 {
