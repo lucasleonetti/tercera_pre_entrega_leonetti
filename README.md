@@ -9,7 +9,7 @@ Este proyecto es una aplicación web desarrollada en Django que permite la gesti
 1.Clonar el repositorio
 
 ```bash
-git clone 'url del repositorio'
+git clone https://github.com/lucasleonetti/tercera_pre_entrega_leonetti.git
 ```
 
 2.Instalar las dependencias
@@ -28,4 +28,12 @@ python manage.py runserver
 
 ```bash
 http://localhost:8000/book_loans/
+```
+
+### Importante
+
+Si por algun motivo ocurre algun error o no puede visualizar los datos ya cargados en la base de datos, intente con ejecutar las migraciones nuevamente.
+
+```bash
+python manage.py migrate
 ```
