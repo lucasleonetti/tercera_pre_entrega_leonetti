@@ -26,7 +26,7 @@ class Libro(models.Model):
         def __str__(self):
             return self.titulo
 
-class Prestamos(models.Model):
+class Prestamo(models.Model):
         
         libro = models.ForeignKey(Libro, on_delete=models.CASCADE)
         fecha_prestamo = models.DateField()
@@ -38,3 +38,15 @@ class Prestamos(models.Model):
         
         def __str__(self):
             return f'{self.nombre_persona} {self.apellido_persona}'
+        
+
+class Cliente(models.Model):
+    
+    nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    dni = models.IntegerField()
+    email = models.EmailField()
+    
+    def __str__(self):
+        return f'{self.nombre} {self.apellido}'
+    
