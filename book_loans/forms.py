@@ -82,3 +82,20 @@ class LibroForm(forms.Form):
     idioma = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'placeholder': 'Ingrese idioma de libro', 'class': 'form-control mb-4' }), label='Idioma de libro')
     
     cantidad_paginas = forms.IntegerField(widget=forms.NumberInput(attrs={'placeholder': 'Ingrese cantidad de páginas de libro', 'class': 'form-control mb-4' }), label='Cantidad de páginas de libro')
+    
+    
+class AutorForm(forms.Form):
+    
+    class Meta:
+        model = Autor
+        fields = ['nombre', 'apellido', 'fecha_nacimiento', 'fecha_defuncion', 'nacionalidad']
+    
+    nombre = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'placeholder': 'Ingrese nombre de autor', 'class': 'form-control mb-4' }), label='Nombre de autor')
+    
+    apellido = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'placeholder': 'Ingrese apellido de autor', 'class': 'form-control mb-4' }), label='Apellido de autor')
+    
+    fecha_nacimiento = forms.DateField(widget=forms.DateInput(attrs={'placeholder': 'Ingrese fecha de nacimiento de autor', 'class': 'form-control mb-4', 'type': 'date' }), label='Fecha de nacimiento de autor')
+    
+    fecha_defuncion = forms.DateField(widget=forms.DateInput(attrs={'placeholder': 'Ingrese fecha de defunción de autor', 'class': 'form-control mb-4', 'type': 'date' }), label='Fecha de defunción de autor')
+    
+    nacionalidad = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'placeholder': 'Ingrese nacionalidad de autor', 'class': 'form-control mb-4' }), label='Nacionalidad de autor')
