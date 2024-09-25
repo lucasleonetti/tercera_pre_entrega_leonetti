@@ -20,8 +20,8 @@
           <tr>
             <th scope="row">{{prestamo.id}}</th>
             <td>{{prestamo.libro}}</td>
-            <td>{{prestamo.nombre_usuario}}</td>
-            <td>{{prestamo.apellido_usuario}}</td>
+            <td>{{prestamo.nombre_persona}}</td>
+            <td>{{prestamo.apellido_persona}}</td>
             <td>{{prestamo.fecha_prestamo}}</td>
             <td>{{prestamo.fecha_devolucion}}</td>
           </tr>
@@ -32,10 +32,12 @@
   </div>
 </div>
 
+
   <div class="align-content-center text-center">
     <a class="btn btn-secondary mb-4 mt-4" href="../">Volver a Inicio</a>
     <a class="btn btn-primary mb-4 mt-4" href="{% url 'nuevo_cliente' %}">Registrar Cliente</a
   </div>
+
  
 
 {% endblock contenidoDinamico %}
